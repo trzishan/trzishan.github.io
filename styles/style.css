@@ -1,29 +1,31 @@
-html{
-    scroll-snap-type: y proximity;
-}
-
 body{
-    background-color: rgb(8, 7, 0);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-type: y mandatory;
 }
 
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /*------------- nav bar ---------------*/
 
-nav{
+header{
     position: fixed;
-    margin-top: 0;
+    top: 0;
+    z-index: 999;
+    height: 64px;
+    background-color: rgb(24, 24, 24);
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    background-color: rgb(0, 19, 24);
 }
 
 nav ul{
@@ -48,31 +50,36 @@ nav ul li a:hover{
 }
 
 .left{
-    font-size: 1.5rem;
+    margin: 0 16px;
+    font-size: 1.3rem;
+}
+
+#menu{
+    display: none;
+    height: 32px;
+    width: 32px;
+    margin-right: 16px;
 }
 
 /*------------ Home Section --------------*/
 
 #home{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     scroll-snap-align: start;
-    margin-bottom: 80px;
+
 }
 
-#home > div{
-    width: 30%;
-}
 
 .leftSection{
     font-size: 2rem;
 }
 
 .rightSection img{
-    width: 100%;
-    
+    max-height: 400px;
+    border-radius: 50%;
 }
 
 .purple{
@@ -86,11 +93,12 @@ nav ul li a:hover{
 /*-------------------- Projects --------------------*/
 
 #projects{
-    max-width: 80vw;
-    margin: auto;
-    /* margin-top: 80px; */
-    padding-top: 80px;
-    height: 90vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    height: 100vh;
     scroll-snap-align: start;
 }
 
@@ -104,17 +112,18 @@ nav ul li a:hover{
 
 .boxes{
     width: 80vw;
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .box{
     height: 315px;
     width: 200px;
-    background-color: rgb(0, 19, 24);
+    background-color: rgb(24, 24, 24);
     border-radius: 30px;
     margin: 0 8px;
     display: flex;
@@ -122,11 +131,12 @@ nav ul li a:hover{
     justify-content: space-around;
     align-items: center;
     transition: 0.5s;
+    scroll-snap-align: start;
 }
 
 .box:hover{
     color: black;
-    background-color: rgba(255, 196, 0, 0.8);
+    background-color: rgb(255, 196, 0);
     border-radius: 30px;
 }
 
@@ -158,14 +168,18 @@ nav ul li a:hover{
 /*-------------------------- Contact -------------------------*/
 
 #contact{
-    height: 90vh;
-    width: 80vw;
-    margin: auto;
-    padding-top: 80px;
-    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    scroll-snap-align: start;
 }
 
 #contact h1{
+    position: absolute;
+    left: 0;
     font-size: 1.6rem;
 }
 
@@ -183,11 +197,8 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 60px;
     transition: 0.5s;
-    background-color: rgb(0, 19, 24);
+    background-color: rgb(24, 24, 24);
 }
 
 .mailme:hover{
@@ -200,17 +211,16 @@ nav ul li a:hover{
 }
 
 #links{
-    margin: auto;
     display: flex;
-    justify-content: space-around;
-    width: 50vw;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .link{
-    background-color: rgb(0, 19, 24);
-    height: 56px;
-    width: 56px;
+    background-color: rgb(255, 187, 0);
+    height: 48px;
+    width: 48px;
     border-radius: 60px;
     transition: 0.5s;
 }
@@ -222,7 +232,8 @@ nav ul li a:hover{
 #links img{
     margin-top: -2px;
     margin-left: -2px;
-    height: 60px;
+    height: 52px;
+    width: 52px;
 }
 
 
@@ -234,4 +245,123 @@ nav ul li a:hover{
 .uname:hover{
     transition: 0.5s;
     color: rgb(255, 187, 0);
+}
+
+
+@media (max-width: 700px){
+
+    header{
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #home{
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .leftSection{
+        font-size: 1.2rem;
+    }
+
+    .rightSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    } 
+
+    .rightSection img{
+        max-width: 70vw;
+    }
+
+    section h1, .text-gray{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .boxes{
+        width: 100vw;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 24px;
+        gap: 24px;
+        height: fit-content;
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .box:hover{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 24px;
+        gap: 24px;
+        height: fit-content;
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+    }
+
+
+    .box:hover .image{
+        height: initial;
+        width: initial;
+        background-color: initial;
+    }
+
+
+    .box .image{
+        height: 80vw;
+        width: 80vw;
+    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mailme{
+        width: 100vw;
+        background-color: inherit;
+    }
+
+    .mailme:hover{
+        background-color: inherit;
+        border-radius: 0;
+    }
 }

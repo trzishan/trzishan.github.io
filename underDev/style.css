@@ -16,6 +16,7 @@ body{
     background-color: var(--rich-black);
     font-family: sans-serif;
     color: var(--platinum);
+    scroll-snap-type: mandatory;
 }
 
 .nav{
@@ -65,6 +66,7 @@ body{
     /* margin-top: 8vh; */
     display: flex;
     justify-content: space-evenly;
+    scroll-snap-align: start;
 }
 
 .left{
@@ -90,6 +92,7 @@ body{
     padding-top: 20vh;
     display: flex;
     justify-content: center;
+    scroll-snap-align: start;
 }
 
 .window{
