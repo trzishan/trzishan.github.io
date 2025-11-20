@@ -268,9 +268,9 @@ nav ul li a:hover {
         z-index: 999;
     }
 
-    #menu {
+    /* #menu {
         display: block;
-    }
+    } */
 
     #home {
         width: 100vw;
@@ -304,7 +304,19 @@ nav ul li a:hover {
         align-items: center;
     }
 
+    nav {
+        justify-content: center;
+    }
+
+    .left {
+        margin-left: 32px;
+    }
+
     nav ul {
+        display: none;
+    }
+
+    nav .right {
         display: none;
     }
 
