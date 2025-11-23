@@ -222,9 +222,10 @@ nav ul li a:hover {
 
 #links {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     gap: 32px;
+    height: 64px;
 
 }
 
@@ -237,8 +238,8 @@ nav ul li a:hover {
 
 .link:hover {
     /* background-color: rgb(255, 187, 0); */
-    height: 48px;
-    width: 48px;
+    height: 42px;
+    /* width: 42px; */
 }
 
 #links img {

@@ -1,38 +1,32 @@
 [
     {
-        "id": 1,
         "title": "ShasthoSheba - Hackathon Project",
         "link": "https://github.com/trzishan/404hack",
         "image": "/images/shasthosheba.png"
     },
     {
-        "id": 2,
         "title": "ReactJS Instagram Clone",
-        "link": "https://github.com/tahmidrzishan/instaclone",
+        "link": "https://github.com/trzishan/instaclone",
         "image": "/images/insta.png"
     },
     {
-        "id": 3,
-        "title": "Brackeys Godot 2D Game",
-        "link": "https://github.com/tahmidrzishan/brackeys-godot-2d",
-        "image": "/images/brackey.jpg"
-    },
-    {
-        "id": 4,
-        "title": "Mobile Facebook Clone (HTML-CSS Project)",
-        "link": "https://github.com/tahmidrzishan/fbdummy",
-        "image": "/images/fb.png"
-    },
-    {
-        "id": 5,
         "title": "Rust Bangla Tutorials (HTML-CSS Project)",
-        "link": "https://github.com/tahmidrzishan/rust.bangla",
+        "link": "https://github.com/trzishan/rust.bangla",
         "image": "/images/rust.png"
     },
     {
-        "id": 6,
+        "title": "Brackeys Godot 2D Game",
+        "link": "https://github.com/trzishan/brackeys-godot-2d",
+        "image": "/images/brackey.jpg"
+    },
+    {
+        "title": "Mobile Facebook Clone (HTML-CSS Project)",
+        "link": "https://github.com/trzishan/fbdummy",
+        "image": "/images/fb.png"
+    },
+    {
         "title": "Youtube Videos",
-        "link": "https://www.youtube.com/@tahmidrzishan/videos",
+        "link": "https://www.youtube.com/@trzishan/videos",
         "image": "/images/yt.jpg"
     }
 ]
