@@ -359,11 +359,11 @@ nav ul li a:hover {
     }
 
 
-    /* .box:hover .image {
-        height: initial;
-        width: initial;
+    .box:hover .image {
+        height: 80vw;
+        width: 80vw;
         background-color: initial;
-    } */
+    }
 
 
     .box .image {
